@@ -13,7 +13,7 @@ public class MyConfiguration extends Configuration {
 }
 ```
 
-This will now generate an empty configuration file. To add fields to fields to your config, we recommend using Lombok's `@Getter` annotation. Click [here](https://projectlombok.org/) to learn more about Lombok.
+This will now generate an empty configuration file. To add fields to your config, we recommend using Lombok's `@Getter` annotation. Click [here](https://projectlombok.org/) to learn more about Lombok.
 
 For example, if you wanted a configurable join message you could add the following to your configuration file:
 ```java
