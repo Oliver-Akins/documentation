@@ -2,4 +2,4 @@
 
 - Getting Started
 
-  - [Setting up your development environment](getting_started/setup.md)
+  - [Setting up your dev environment](getting_started/setup.md)
