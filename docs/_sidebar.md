@@ -7,3 +7,7 @@
   - [Creating your first plugin](getting_started/your_first_plugin.md)
   - [Adding a config file](getting_started/adding_a_configuration_file.md)
   - [Adding your first command](getting_started/adding_a_custom_command.md)
+
+- Systems
+
+  - [Event Listeners](systems/event_listeners.md)
