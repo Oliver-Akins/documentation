@@ -14,3 +14,4 @@
   - [Permissions](systems/permissions.md)
   - [Runnables](systems/runnables.md)
   - [Level API](systems/level_api.md)
+  - [Entity API](systems/entity_api.md)
