@@ -44,3 +44,28 @@ public void onEnable() {
     registerListeners(new MyListener());
 }
 ```
+
+### Creating custom events
+
+To create a custom event, simply create a new class that extends one of the following event types:
+
+ - `EventType`
+ - `Cancellable`
+
+Once again, we recommend the use of Lombok here. See the getting started guide to learn more.
+
+Sample event class:
+
+```java
+
+public class MyCustomEventType extends EventType {
+    private ServerPlayer player;
+    // other various fields relating to the event
+}
+```
+
+This event can then be dispatched with the following snippet:
+
+```java
+Conduit.getEventManager().dispatchEvent(new MyCustomEventType(thePlayer));
+```
