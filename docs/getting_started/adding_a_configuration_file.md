@@ -8,7 +8,7 @@ You may want to add some settings to your plugin. The best way to do this is thr
 Create a new class called `MyConfiguration` and add the following decorator to it:
 
 ```java
-@ConfigFile(name = "first", type = "json", defaultFile = "defaultFirst")
+@ConfigFile(name = "first", type = "json")
 public class MyConfiguration extends Configuration {
 }
 ```
