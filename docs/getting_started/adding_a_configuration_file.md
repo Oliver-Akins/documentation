@@ -28,7 +28,7 @@ For example, if you wanted a configurable join message you could add the followi
 @Getter private String joinMesssage;
 ```
 
-And just like that, Conduit will automatically handle the serialization and deserialization to and from your config file.
+Just like that, Conduit will automatically handle the serialization and deserialization to and from your config file.
 
 ### Registering the configuration file
 
