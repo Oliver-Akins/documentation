@@ -32,7 +32,7 @@ Just like that, Conduit will automatically handle the serialization and deserial
 
 ### Registering the configuration file
 
-In your main plugin file, add the following to your PluginMeta decorator in you plugin's main class:
+In your main plugin file, add the `config` attribute to the `@PluginMeta` decorator, the value of the attribute should be the configuration class (example: `config = MyConfiguration.class`). Your `MyPlugin.java` file should now look like:
 
 ```java
 @PluginMeta(name = "MyPlugin", author = "MyNameHere", description = "What my plugin does", version = "0.0.1", config = MyConfiguration.class)
