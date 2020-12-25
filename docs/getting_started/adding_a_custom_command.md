@@ -6,7 +6,16 @@ Conduit leverages Minecraft's Brigadier system for command management making it 
 
 ### Creating your command
 
-Create a new class called `MyFirstCommand` and enter the following into it:
+Create a new class called `MyFirstCommand`, have it extend the `BaseCommand` class. Add the following method override to the class you just created:
+
+```java
+@Override
+public LiteralArgumentBuilder<CommandSourceStack> getCommand() {
+    return Commands.literal("myfirstcommand").executes(ctx -> ctx.getSource().sendSuccess("Hello, world!", false));
+}
+```
+
+This method override will allow you to properly utilize Minecraft's Brigadier system. Your `MyFirstCommand.java` file should now look like the code below:
 
 ```java
 public class MyFirstCommand extends BaseCommand {
