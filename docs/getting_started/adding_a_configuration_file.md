@@ -5,7 +5,7 @@ You may want to add some settings to your plugin. The best way to do this is thr
 
 ### Creating the configuration file
 
-Create a new class called `MyConfiguration` and add the following decorator to it:
+Create a new class called `MyConfiguration` that extends `Configuration` and add the `@ConfigFile` decorator to it:
 
 ```java
 @ConfigFile(name = "first", type = "json")
