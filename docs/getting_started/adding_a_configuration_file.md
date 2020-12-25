@@ -13,7 +13,15 @@ public class MyConfiguration extends Configuration {
 }
 ```
 
-This will now generate an empty configuration file. To add fields to your config, we recommend using Lombok's `@Getter` annotation. Click [here](https://projectlombok.org/) to learn more about Lombok.
+<!-- TODO: Add a link to the PluginMeta attributes once it's been written -->
+
+The `name` you provide will be the name of the file in the plugin's config folder.
+
+The `type` is the extension / file type of the configuration. At this time, the supported file types are:
+
+ - `json`
+
+This will now generate an empty configuration file. To add fields to your config, we recommend using Lombok's `@Getter` annotation. You can [learn more about Lombok](https://projectlombok.org/) on their website.
 
 For example, if you wanted a configurable join message you could add the following to your configuration file:
 ```java
@@ -32,14 +40,6 @@ public class MyPlugin extends Plugin {
     // ...snip...
 }
 ```
-
-The `name` you provide will be the name of the file in the plugin's config folder.
-
-The type is the extension / file type of the configuration. At this time the support file types are:
-
- - `json`
-
-The `defaultFile` is the file that is packaged with your plugin (generally in your `resources` folder) to be copied as the default config if the config does not already exist.
 
 ### Accessing the configuration
 
