@@ -39,8 +39,14 @@ TODO
 
 ### Registering the command
 
-To register the command, simply add this to your plugin's `onEnable` function:
+To register the command, call the `registerCommand` method with an instance of the command's class in your plugin's `onEnable` method.
 
 ```java
 registerCommand(new MyFirstCommand())
+```
+
+You can enable any number of commands in this function by adding another command object instance to the method as can be seen below:
+
+```java
+registerCommand(new CustomCommand1(), new CustomCommand2(), /* ... */ , new CustomCommandX())
 ```
