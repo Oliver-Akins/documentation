@@ -43,7 +43,7 @@ public class MyPlugin extends Plugin {
 
 ### Accessing the configuration
 
-To access the configuration file at a later time, follow the guide below:
+To access the configuration file at a later time, you can use the `getConfig` method on the plugin instance. An example of this can be seen below in the
 
 ```java
 // ...snip...
